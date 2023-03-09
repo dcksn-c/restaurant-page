@@ -1,0 +1,135 @@
+@font-face {
+    font-family: genshinFont;
+    src: url(./fonts/zh-cn.ttf);
+}
+
+body {
+    font-family: genshinFont;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #FCFCFC;
+    font-size: 2.4rem;
+    padding: 20px;
+    padding-bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-bottom: 0;
+    font-family: genshinFont;
+    background-color: transparent;
+    color: #FCFCFC;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer
+}
+
+.menu-button {
+    border-left: 3px solid #FCFCFC;
+    border-right: 3px solid #FCFCFC;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.owner-img {
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    justify-content: center;
+}
+
+.home {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home > p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.home > img {
+    margin-bottom: 30px;
+}
+
+.menu {
+    padding: 30px;
+    color: #FCFCFC;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu-item > img {
+    height: 150px;
+}
+
+.menu-item > p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.contact {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.img-container > img {
+    height: 300px;
+}
+
+.contact > p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
